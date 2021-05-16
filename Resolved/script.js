@@ -13,7 +13,6 @@ var score = 0;
 var incorrect = 0;
 
 startButton.addEventListener("click", startQuiz);
-// Putting the questions into an array
 var questions = [
   {
     questionText: "What year was Coronavirus discovered?",
@@ -51,7 +50,7 @@ var questions = [
     answer: "A. 60",
   },
 ];
-
+//Start button clicked
 function startQuiz() {
   //stop displaying the welcome screen
   // startPage.style.display = "none";
@@ -65,9 +64,10 @@ function startQuiz() {
   getUserInput();
 }
 
+//Timer function
 function timeInterval() {
   time = setInterval(timer, 1000);
-  var timeLeft = 60; // Set the originial clock to 60 seconds
+  var timeLeft = 60;
 
   function timer() {
     // if the wrong answer is clicked, take 2 seconds away from the count
@@ -83,41 +83,35 @@ function timeInterval() {
       timeLeft--;
     } else {
       clearInterval(time);
-      //time is 0, display the score
       document.getElementById("timer-txt").innerHTML = "Time Remaining: 0 sec";
       document.getElementById("final-score").innerHTML = "Score: " + score;
-      // set display to none so the questions page is now gone
       container.style.display = "none";
-      // display the ScorePage now that questions are over
+      // Load ScorePage when questions completed
       ScorePage.style.display = "block";
     }
   }
 }
-//Get the question to display properly as well as the options on the buttons
+//Display questions and options via the id tags
 function displayPrompts() {
-  //update these elements on the user Interface
   var title = document.querySelector("#question-title");
   var text = document.querySelector("#question-text");
-  //update questions and text
+  //question count function
   title.textContent = "question: " + (qCount + 1);
   text.textContent = questions[qCount].questionText;
-  //loop to update answer buttons
+  //loop
   for (i = 0; i < 4; i++) {
-    //target the button
     var button = document.querySelector("#answer" + (i + 1));
     console.log(button);
-    //update the text on the button
     button.textContent = questions[qCount].options[i];
   }
   qCount++;
 }
+//Check answer value
 function getUserInput() {
-  // event listener for answer-btn
   answer1.addEventListener("click", function () {
     var userInput = this.innerHTML;
     var actualAnswer = questions[qCount - 1].answer;
     console.log(actualAnswer);
-    //check if answer value matches correct value
     if (userInput === actualAnswer) {
       score++;
       displayPrompts();
@@ -129,7 +123,7 @@ function getUserInput() {
   answer2.addEventListener("click", function () {
     var userInput = this.innerHTML;
     var actualAnswer = questions[qCount - 1].answer;
-    //check if answer value matches correct value
+    //Check answer value
     if (userInput === actualAnswer) {
       score++;
       displayPrompts();
@@ -141,7 +135,7 @@ function getUserInput() {
   answer3.addEventListener("click", function () {
     var userInput = this.innerHTML;
     var actualAnswer = questions[qCount - 1].answer;
-    //check if answer value matches correct value
+    //Check answer value
     if (userInput === actualAnswer) {
       score++;
       displayPrompts();
@@ -153,7 +147,7 @@ function getUserInput() {
   answer4.addEventListener("click", function () {
     var userInput = this.innerHTML;
     var actualAnswer = questions[qCount - 1].answer;
-    //check if answer value matches correct value
+    //Check answer value
     if (userInput === actualAnswer) {
       score++;
       displayPrompts();
