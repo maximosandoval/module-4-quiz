@@ -8,38 +8,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./Resolved/style.css" />
   
-
+    
       
     <!-- START QUESTION CONTAINER -->
     <div class="question-window">
       <header>
-          <div class="title">How well do you know ?</div>
-          <div id="timer">
+        <div><h1>Coronavirus Self-Checker Quiz</h1></div>
+          <!-- <p>Answer questions to help you decide whether to seek medical care. <br />This system is not intended for the diagnosis or treatment of disease, including COVID-19.</p> -->
+              <div id="timer"></div>
               <div id="timer-txt">Timer</div>
               <div id="timer-sec"></div>
-              
-          </div>
-          <div class="timer-line"></div>
-          <button id="start">Start</button>
-      </header>
-      <section>
-          <div id="question-window"></div>
-           <!-- Question #1 -->
+              <hr id="divider">
+               <!-- Question #1 -->
            <div id="question-title"></div>
            <div id="question-text"></div>
-           <div id="answer"></div>
+           <div id="answer1"></div>
+           
            <!-- Question #2 -->
            <div id="question-title"></div>
            <div id="question-text"></div>
+           <div id="answer2"></div>
            <!-- Question #3 -->
            <div id="question-title"></div>
            <div id="question-text"></div>
+           <div id="answer3"></div>
            <!-- Question #4 -->
            <div id="question-title"></div>
            <div id="question-text"></div>
+           <div id="answer4"></div>
+              
+     </div>
+          <div class="timer-line"></div>
+          <button id="start">Start</button>
+      </header>
+      <!--<section>
+          <div id="question-window"></div>
+            Question #1
+           <div id="question-title"></div>
+           <div id="question-text"></div>
+           <div id="answer1"></div>-->
+           <!-- Question #2 -->
+           <!-- <div id="question-title"></div>
+           <div id="question-text"></div>
+           <div id="answer2"></div> -->
+           <!-- Question #3 -->
+           <!-- <div id="question-title"></div>
+           <div id="question-text"></div>
+           <div id="answer3"></div> -->
+           <!-- Question #4 -->
+           <!-- <div id="question-title"></div>
+           <div id="question-text"></div>
+           <div id="answer4"></div> --> 
            <!-- Next Question Button -->
-           <button class="next-btn">Next Question</button>
-      </section>
+           <!-- <button class="next-btn">Next Question</button> 
+      </section>-->
 
 
       <!-- QUIZ STAGE NEXT BTN CONTAINER -->
@@ -47,16 +69,16 @@
         <div class="total_que"></div>
         
 <!-- RESULTS CONTAINER -->
-        <div class="ScorePage"></div>
+       <!-- <div class="ScorePage"></div>
           <div class="complete_text">You've completed the Quiz!</div>
           <div id="score">
-              <!-- Here I've inserted Score Result from JavaScript -->
+            
           </div>
-          <!-- <div class="buttons">
+           <div class="buttons">
               <button class="restart">Replay Quiz</button>
               <button class="quit">Quit Quiz</button>
-          </div> -->
-      </div>
+          </div> 
+      </div>-->
     </footer>
 </div>
 

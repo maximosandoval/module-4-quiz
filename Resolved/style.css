@@ -44,39 +44,121 @@ section {
 
 body {
   line-height: 1.75em;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+  background: rgb(29, 26, 26)
   /*background: rgb(100, 163, 221) url(https://images.hdqwalls.com/download/rick-and-morty-netflix-2020-9d-1336x768.jpg) center top/cover repeat;*/
 }
 
-.startPage {
+/* .startPage {
   max-width: 800px;
   width: 100%;
   border: 1px solid rgb(128, 126, 126);
   background: #eee;
   padding: 10px;
+} */
+
+h1{
+  font-size: 2.4rem;
 }
 
 .timer {
   font-size: inherit;
+  text-align: center;
 }
 
-.startButton, 
+.divider{
+  border-bottom: 1px solid lightgray;
+}
+
 .question-window, 
 .quiz_stage{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
+button#start{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  width: 140px;
+  background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  border: top: 1px solid lightgray;
+  box-shadow: 0px 3px 5px 1px rgb(128, 126, 126);
+}
+
+#question-title{
+  font-size: 1rem;
+  color: lightslategrey;
+}
+
+#question-text{
+font-size: 1.7rem;
+font-weight: 700;
+}
+
+#answer1, 
+#answer2, 
+#answer3, 
+#answer4 {
+font-size: 1.2rem;
+font-weight: 300;
+color: blue
+}
+
+
+
+
+
+
+
+
+
+
 .question-window {
-width: 540px;
+width: 640px;
+margin: 0 10px 0;
 background: #fff;
 border-radius: 5px;
 }
+
+.question-title{
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.question-text{
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+
+.answer1{
+font-size: 2.4rem;
+font-weight: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .quiz_box .quiz_title {
 height: 60px;

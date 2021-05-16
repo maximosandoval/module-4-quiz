@@ -16,35 +16,39 @@ startButton.addEventListener("click", startQuiz);
 // Putting the questions into an array
 var questions = [
   {
-    questionText: "What does HTML stand for?",
+    questionText: "What year was Coronavirus discovered?",
+    options: ["A. 2021", "B. 2020", "C. 2019", "D. 2018"],
+    answer: "C. 2019",
+  },
+  {
+    questionText: "Finish the following sentence. You wear a mask over your...",
     options: [
-      "Home Tool Markup Language",
-      "Hyper Text Markup Language",
-      "Hyperlinks and Text Markup Language",
-      "Something else",
+      "A. head",
+      "B. mouth and chin",
+      "C. nose and mouth",
+      "D. below your chin",
     ],
-    answer: "Hyper Text Markup Language",
+    answer: "C. nose and mouth",
   },
   {
-    questionText: "What element creates the largest heading?",
-    options: ["<heading>", "<head>", "<h1>", "<h2>"],
-    answer: "<h1>",
+    questionText: "What is the recommended distance for social distancing?",
+    options: ["A. 2 feet", "B. 4 feet", "C. 6 feet", "D. 8 feet"],
+    answer: "C. 6 feet",
   },
   {
-    questionText: "Which character respresents an end tag?",
-    options: ["<", "/", "^", "*"],
-    answer: "/",
+    questionText: "Which of the following has the CDC recommended avoiding?",
+    options: [
+      "A. Crowded areas",
+      "B. Rest stops",
+      "C. Ventailated areas",
+      "D. Rideshare services",
+    ],
+    answer: "A. Crowded areas",
   },
   {
-    questionText: "Which element represents an ordered list?",
-    options: ["<ol>", "<ul>", "<li>", "<list>"],
-    answer: "<ol>",
-  },
-  {
-    questionText:
-      "What attribute shows text for an image if it cant be displayed?",
-    options: ["Title", "longdesc", "src", "alt"],
-    answer: "alt",
+    questionText: "Use hand sanitizer with at least ___% alcohol",
+    options: ["A. 60", "B. 40", "C. 20", "D. 10"],
+    answer: "A. 60",
   },
 ];
 
@@ -101,6 +105,7 @@ function displayPrompts() {
   for (i = 0; i < 4; i++) {
     //target the button
     var button = document.querySelector("#answer" + (i + 1));
+    console.log(button);
     //update the text on the button
     button.textContent = questions[qCount].options[i];
   }
