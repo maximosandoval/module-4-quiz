@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Max Sandoval Quiz</title>
+    <meta name="description" content="Quiz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Resolved/style.css" />
+  
+
+      
+    <!-- START QUESTION CONTAINER -->
+    <div class="question-window">
+      <header>
+          <div class="title">How well do you know ?</div>
+          <div id="timer">
+              <div id="timer-txt">Timer</div>
+              <div id="timer-sec"></div>
+              
+          </div>
+          <div class="timer-line"></div>
+          <button id="start">Start</button>
+      </header>
+      <section>
+          <div id="question-window"></div>
+           <!-- Question #1 -->
+           <div id="question-title"></div>
+           <div id="question-text"></div>
+           <div id="answer"></div>
+           <!-- Question #2 -->
+           <div id="question-title"></div>
+           <div id="question-text"></div>
+           <!-- Question #3 -->
+           <div id="question-title"></div>
+           <div id="question-text"></div>
+           <!-- Question #4 -->
+           <div id="question-title"></div>
+           <div id="question-text"></div>
+           <!-- Next Question Button -->
+           <button class="next-btn">Next Question</button>
+      </section>
+
+
+      <!-- QUIZ STAGE NEXT BTN CONTAINER -->
+      <footer>
+        <div class="total_que"></div>
+        
+<!-- RESULTS CONTAINER -->
+        <div class="ScorePage"></div>
+          <div class="complete_text">You've completed the Quiz!</div>
+          <div id="score">
+              <!-- Here I've inserted Score Result from JavaScript -->
+          </div>
+          <!-- <div class="buttons">
+              <button class="restart">Replay Quiz</button>
+              <button class="quit">Quit Quiz</button>
+          </div> -->
+      </div>
+    </footer>
+</div>
+
+      <!-- High Score Box -->
+      <!-- <section id="highScore" class="finalScore">
+        <h3 id="final-score"></h3>
+        <hr class="linerule" />
+        <p>High Scores</p>
+        <form action="./script/script.js"></form>
+        <label for="initials">Enter Your Initials</label>
+        <input type="text" id="playersinitials" name="playersinitials" /> -->
+      
+        <!-- Submit your high score button -->
+      <!-- <button class="submitbtn" id="submit" onclick="checkAnswer()">
+        Submit Your High Score
+      </button>
+      </section> -->
+
+      <script src="./Resolved/script.js"></script>
+    </main> 
+  </body>
+</html>
