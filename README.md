@@ -1,4 +1,4 @@
-#Project Title
+# Project Title
 Create an online browser-based timed quiz which the end user can easily use with a polished UI. The online quiz includes the following;
 1. A per question timer 
 2. Multiple-choice questions
@@ -8,7 +8,7 @@ Create an online browser-based timed quiz which the end user can easily use with
 
 View deployed page here: https://maximosandoval.github.io/online-quiz/
 
-#Criteria
+## Criteria
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
@@ -24,7 +24,7 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 
-#Built With
+## Built With
 HTML
 CSS
 JavaScript
